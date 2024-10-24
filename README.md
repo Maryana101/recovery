@@ -9,7 +9,6 @@
 ```
 > en
 > conf t
-> int 
 > int GigabitEthernet0/1
 > standby preempt 
 > standby 1 track GigabitEthernet0/0
@@ -26,7 +25,6 @@
 ```
 > en
 > conf t
-> int 
 > int GigabitEthernet0/1
 > standby 1 track GigabitEthernet0/0
 ```

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+HOST="localhost"
+PORT=80
+FILE="/var/www/html/index.nginx-debian.html"
+
+# Проверка доступности порта
+if ! nc -z $HOST $PORT; then
+    exit 1
+fi
+
+# Проверка существования файла
+if ! [ -f $FILE ]; then
+    exit 1
+fi
+
+exit 0
